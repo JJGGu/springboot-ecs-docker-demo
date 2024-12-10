@@ -11,9 +11,9 @@ RUN yum update -y && \
     yum install -y git && \
     yum clean all && \
     cd /root && \
-    git clone https://github.com/JJGGu/springboot-ecs-docker-demo.git && \
+    git clone https://github.com/JJGGu/springboot-ecs-docker-demo.git code && \
     mkdir -p /home/admin/application && \
-    cp package.tgz /home/admin/application && \
+    cp code/package.tgz /home/admin/application && \
     cd /home/admin/application && \
     tar xvf package.tgz && \
     rm -rf /root/springboot-ecs-docker-demo && \
